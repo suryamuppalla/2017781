@@ -35,7 +35,7 @@ class Todos extends React.Component {
     // Once component is loaded, get data from server
     async componentDidMount() {
         try {
-            const res = await fetch("http://localhost/2017781/codeigniter-demo/index.php/api/contacts");
+            const res = await fetch("https://mi-linux.wlv.ac.uk/~2017781/ci-api/index.php/api/contacts");
             if (res.status >= 400)
                 return  new Error("something went wrong")
             const user = await res.json();
